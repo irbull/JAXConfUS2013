@@ -38,10 +38,6 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-				<h1>Not finished slides yet...</h1>
-				</section>
-
-				<section>
 					<h3>Cloud Development goes Lightweight</h3>
 					<h4>The Open Source Orion Project</h4>
 					<h4>JAXConf US - Jun, 2013</h4>
@@ -59,9 +55,10 @@
 
 				<section>
 				<h3>In the beginning...</h3>
-				<p>Inside IBM Orion was started by some of the same Eclipse Team members from SWT & Platform team</p>
+				<p>Inside IBM Orion was started by some of the Eclipse Team members from SWT & the Platform team</p>
 				<p>The goal was to begin working on a platform to support the growing initiatives for Cloud</p>
 				<p>As IBM is a founder of Eclipse, we wanted to leverage our experiences, investment, and the governance model</p>
+				<p>IBM made the initial contribution of Orion components in January, 2011</p>
 				</section>
 
 				<section>
@@ -75,7 +72,7 @@
 
 				<section>
 				<h3>Are developers really moving to the cloud?</h3>
-				<p>The rise of products like Cloud9, CodeEnvy, indicate there is a desire
+				<p>The rise of products like Cloud9 & CodeEnvy indicate there is a desire
 				for hosted development solutions</p>
 				<p>Progression to other CloudBased tools, Gmail, Dropbox, GitHub, Ohloh, CloudFoundry, AmazonWebServices</p>
 				<blockquote>Developers are still skeptical of online tools but understand the complex nature of IDE setup has to change</blockquote>
@@ -114,8 +111,8 @@
 
 				<section>
 				<h3>How are these pages constructed?</h3>
-				<p>Orion has many templates by default</p>
-				<p>The necessary functionality for developers</p>
+				<p>Orion has many page templates by default</p>
+				<p>Provide initial functionality for developers</p>
 				<p>Product teams can start with existing pages</p>
 				<p>Orion provides extensibility points to plugins</p>
 				<p><i>Extensibility is what sets Orion apart!!</i></p>
@@ -148,7 +145,7 @@
 				</section>
 
 				<section>
-					<h3>So how is Orion being consumed?</h3>
+					<h3>So how is Orion being utilized?</h3>
 				</section>
 
 				<section>
@@ -233,6 +230,10 @@ app.listen(3000);
 				</section>
 
 				<section>
+					<h3>Exend or write an Orion Server</h3>
+				</section>
+
+				<section>
 				<h3>Orion Java Server</h3>
 				<p>Orion is available as a stand-alone Java based server or WAR file that takes 2 minutes
 				to setup a multi-user cloud based development platform</p>
@@ -241,7 +242,7 @@ app.listen(3000);
 				</section>
 				
 				<section>
-				<h3>Orion Node.js Server</h3>
+				<h3>Orion Node.js Server</h3>	
 				<p>Also available as a Node.js based application, with less functionality, but full editor and search capabilities</p>
 				<p>Very portable and great performance</p>
 				<p>Deploy anywhere Node is installed</p>
@@ -256,7 +257,9 @@ app.listen(3000);
 				<p>Chris McGee working on a Go Development platform</p>
 				<p>Wrote the file system and search API in Go</p>
 				<p>Added extension plugins for build and format</p>
+				<p>
 				<a href="images/Orion-Go.png"><img width="600" height="414" src="images/Orion-Go.png" alt="JavaRestfulAPIs"/></a>
+				</p>
 				</section>
 				
 				<section>
@@ -269,7 +272,31 @@ app.listen(3000);
 				</section>
 
 				<section>
-				<h1>Not done yet...</h1>
+					<h3>A globally accessible web tool</h3>
+					<p>i18N built in the core, the UI and in the plug-ins</p>
+					<p>Text editor capable of both Double Byte and working on Bidi</p>
+					<p>Working to be fully accessible</p>
+					<p>Orion provides a plugin for Externalizing strings to bundles</p>
+					<p>
+						<a href="images/Orioni18N.png"><img width="800" height="323" src="images/Orioni18N.png" alt="IBM RD Traveler"></img></a>
+					</p>
+				</section>
+
+				<section>
+					<h3>Available components and shims from Orion</h3>
+					<p>Promises/A+ cancellation and progress, W3C URL, W3C Web Components, HTML Templates and Custom Elements, JavaScript APIs for OSGi</p>
+					<p>
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/HTMLTemplates-shim.js">Orion HTML Templates Shim</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/URITemplate.js">Orion URI Templates</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/URL-shim.js">Orion URL Shim</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/pluginregistry.js">Orion Plugin Registry</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/serviceregistry.js">Orion Service Registry</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/xhr.js">Orion XHR Implementation</a>, 
+					<a href="https://github.com/mamacdon/deferred-fs">Orion Node Deferred File System</a>
+					<a href="http://download.eclipse.org/orion/">Stand-alone Editor (follow stable links)</a>
+					</p>
+					<p>All under the EPL and EDL</p>
 				</section>
 				
 				<section>
@@ -277,12 +304,13 @@ app.listen(3000);
 					<p>Read our blog at <a href="http://planetorion.org">Planet Orion</a></p>
 					<p>Check out the <a href="http://wiki.eclipse.org/Orion/Buzz">Orion BUZZ</a></p>
 					<p>Lots of information in the <a href="http://wiki.eclipse.org/Orion">Orion Wiki</a></p>
+					<p>Subscribe and contribute to the <a href="https://dev.eclipse.org/mailman/listinfo/orion-dev">Orion Dev List</a>
 					<p>Follow <a href="https://twitter.com/orionhub">@OrionHub on Twitter</a></p>
 					<p>Create an account and try it at <a href="https://orionhub.org">OrionHub</a></p>
 					<p>
-						<a href="http://kenwalker.github.io/">kenwalker (github)</a> / <a href="http://twitter.com/kwalker">@kwalker</a> / <a href="http://twitter.com/orionhub">@orionhub</a>
+						<a href="http://kenwalker.github.io/">kenwalker.github.io</a> / <a href="http://twitter.com/kwalker">@kwalker</a> / <a href="http://twitter.com/orionhub">@orionhub</a>
 						<br>Orion Lead and Orion Dev Lead at IBM Canada
-						<br><i><a href="https://orionhub.org/git/git-repository.html#,cloneGitRepository=git://github.com/kenwalker/OrionOnNode.git">Clone this talk into OrionHub.org from GitHub</a></i>
+						<br><i><a href="https://orionhub.org/git/git-repository.html#,createProject.name=JAXConfUS2013,cloneGit=git://github.com/kenwalker/JAXConfUS2013.git">Start editing this talk at OrionHub.org</a></i>					
 					</p>
 				</section>
 
